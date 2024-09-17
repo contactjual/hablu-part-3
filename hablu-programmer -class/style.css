@@ -1,0 +1,91 @@
+* {
+    font-size: 30px;
+}
+
+
+
+/* pseudo class  */
+ol {
+    background-color: rgb(220, 220, 220);
+    /* list-style: none; */
+    list-style-position: inside;
+}
+
+ol li:nth-child(2n) {
+    color: red;
+    padding-bottom: 20px;
+}
+
+ol li:nth-child(2n+1) {
+    color: green;
+    padding-bottom: 20px;
+}
+
+
+/* pseudo element  */
+.pseu-ele h1::before {
+    content: "This is ";
+}
+.pseu-ele h1::after {
+    content: url(img/star3.jpg);
+}
+
+
+/* opacity */
+.opacity img {
+    width: 500px;
+    opacity: .5;
+}
+
+
+/* Colors & Gradiants */
+.colors h1 {
+    color: #000000;
+    color: rgb(255, 2, 44);
+}
+
+.gradi .box1 {
+    background: linear-gradient(to right, red, green);
+    background: linear-gradient(45deg, red, green);
+    width: 500px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.gradi .box2 {
+    background: radial-gradient(red, green);
+    width: 1000px;
+    height: 500px;
+}
+
+
+/* shadow  */
+.shadow .box1 {
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    margin: 50px;
+    box-shadow: 10px 10px 10px black, -10px -10px 10px rgb(241, 0, 0);
+}
+
+.shadow .box1 p {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 10px 10px 10px black, -10px -10px 10px rgb(241, 0, 0);
+}
+
+
+/* sprite-img */
+.sprite-img .image-area {
+    background-image: url(img/sprite.png);
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: -33px -19px;
+    border-radius: 50%;
+    transition: 1s;
+}
+.sprite-img .image-area:hover {
+    background-position: -33px -67px;
+}
